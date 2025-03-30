@@ -1,6 +1,9 @@
 name: Login to Alwaysdata1
 
-on: [push, workflow_dispatch]
+on:
+  schedule:
+    - cron: '2 1 */30 * *'  # 每 4 小时运行一次
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
   login_to_alwaysdata:
