@@ -1,4 +1,4 @@
-name: Login to Alwaysdata11
+name: Login to Alwaysdata5
 
 on:
   schedule:
@@ -12,4 +12,4 @@ jobs:
       - uses: actions/checkout@v3
       - name: Login to Alwaysdata
         run: |
-          python3 login_to_alwaysdata11.py
+          python3 login_to_alwaysdata5.py
